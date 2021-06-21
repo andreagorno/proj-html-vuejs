@@ -69,6 +69,8 @@ export default {
         display: flex;
         align-items: center;
         padding: 30px;
+        max-width: 1235px;
+        margin: auto;
 
         .logo {
             flex-grow: 1;
