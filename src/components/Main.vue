@@ -3,19 +3,23 @@
         <PageIntro />
 
         <WhatWeDo />
+
+        <LearnMore />
     </main>
 </template>
 
 <script>
 import PageIntro from "./PageIntro.vue";
 import WhatWeDo from "./WhatWeDo.vue";
+import LearnMore from "./LearnMore.vue";
 
 export default {
     name: "Main",
 
     components: {
         PageIntro,
-        WhatWeDo
+        WhatWeDo,
+        LearnMore
     },
 }
 </script>

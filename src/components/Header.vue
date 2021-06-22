@@ -69,7 +69,7 @@ export default {
         display: flex;
         align-items: center;
         padding: 30px;
-        max-width: 1235px;
+        max-width: 1600px;
         margin: auto;
 
         .logo {

@@ -17,12 +17,12 @@ body {
 
 .container {
     width: 80%;
-    max-width: 1235px;
     margin: auto;
 }
 
 .container-70 {
     width: 70%;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -37,4 +37,21 @@ body {
 
 .container-40 {
     width: 40%;
+}
+
+.btn {
+    background-color: $bgMainColor1;
+    padding: 5px 25px;
+    border: 2px solid #80ABAE;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: $mainTextColor4;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    i {
+        font-size: 10px;
+        margin-left: 5px;
+    }
 }

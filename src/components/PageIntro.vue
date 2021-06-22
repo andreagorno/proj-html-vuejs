@@ -13,8 +13,9 @@
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div class="jumbotron">
+            <div class="jumbotron container-70">
                <div class="cube">
                     <img src="../assets/img/port-img-07.jpg" alt="">
                     <div class="label">
@@ -71,7 +72,7 @@
                 </div> 
             </div>
             
-        </div>
+        <!-- </div> -->
     </div>
     
 </template>
@@ -91,7 +92,7 @@ export default {
         background-repeat: repeat-x;
         background-position-y: 0%, 90%;
         background-position-x: 0px, -65px;
-        max-width: 1235px;
+        max-width: 1600px;
         margin: auto;
     }
 
@@ -99,9 +100,11 @@ export default {
     .company-info {
         display: flex;
         align-items: center;
+        margin: 0 40px;
 
         div {
             width: 50%;
+            margin-top: 50px;
         }
 
         h2 {
@@ -120,7 +123,6 @@ export default {
     .jumbotron {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
         margin: auto;
         margin-top: 50px;
 
@@ -144,7 +146,7 @@ export default {
                 left: 0;
                 width: 130px;
                 height: 130px;
-                background: linear-gradient(135deg, $bgMainColor1 50%, #F7BCA8 50%);
+                background: linear-gradient(135deg, white 50%, #F7BCA8 50%);
 
                 div {
                     margin-top: 40px;

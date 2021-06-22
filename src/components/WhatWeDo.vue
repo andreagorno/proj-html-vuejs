@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container">
+        <!-- <div class=""> -->
             <div class="container-70">
                 <div class="container-40">
                     <h3>
@@ -9,7 +9,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maxime et qui nemo sequi placeat sapiente amet ea.
                     </p>
-                    <button>
+                    <button class="btn">
                         Read more
                         <i class="fas fa-caret-right"></i>
                     </button>
@@ -51,10 +51,10 @@
                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
                 
             </div>
+        <!-- </div> -->
         <div class="video-player">
             <img src="../assets/img/main-home-video-button-img-01.png" alt="green-player" class="green-player">
             <img src="../assets/img/main-home-video-button-img-02.png" alt="red-player" class="red-player">
-        </div>
         </div>
     </section>
 </template>
@@ -72,14 +72,14 @@ export default {
 <style lang="scss" scoped>
     @import "../style/variables.scss";
 
-    .container {
+    section {
         position: relative;
     }
 
     .container-70 {
         display: flex;
         margin-top: 70px;
-        max-width: 691px;
+        
     }
 
     .container-40 {
@@ -94,25 +94,10 @@ export default {
             color: $mainTextColor2;
         }
 
-        button {
-            background-color: $bgMainColor1;
-            padding: 5px 25px;
-            border: 2px solid #80ABAE;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: bold;
-            color: $mainTextColor4;
-            cursor: pointer;
-
-            i {
-                font-size: 10px;
-                margin-left: 5px;
-            }
-        }
-
-        button:hover {
+        .btn:hover {
             background-color: #80ABAE;
-            color: $bgMainColor1;
+            color: white;
+            transform: scale(1.1);
         }
     }
 
@@ -161,7 +146,7 @@ export default {
     }
 
     .video-player {
-        margin: 50px 0;
+        margin-top: 50px;
         width: 100%;
         height: 500px;
         background-image: url("../assets/img/h2-img-2.jpg");
