@@ -1,7 +1,10 @@
 <template>
     <section>
         <div class="first-block">
+
+            <!-- price section start -->
             <div class="container-70 pricing">
+                <!-- basic start -->
                 <div>
                     <h4>Basic</h4>
                     <h3>
@@ -20,6 +23,7 @@
                         <i class="fas fa-caret-right"></i>
                     </button>
                 </div>
+                <!-- standard start -->
                 <div>
                     <h4>Standard</h4>
                     <h3>
@@ -38,6 +42,7 @@
                         <i class="fas fa-caret-right"></i>
                     </button>
                 </div>
+                <!-- premium start -->
                 <div>
                     <h4>Premium</h4>
                     <h3>
@@ -57,6 +62,9 @@
                     </button>
                 </div>
             </div>
+            <!-- /price section start -->
+
+            <!-- shop links -->
             <div class="asides">
                 <div>
                     <img src="../assets/svg/svg-2.svg" alt="">
@@ -65,8 +73,10 @@
                     <img src="../assets/svg/svg-4.svg" alt="">
                 </div>
             </div>
+            <!-- /shop links -->
         </div>
         
+        <!-- getInTouch form start -->
         <div class="second-block">
             <div class="container-70" id="getInTouch">
                 <div>
@@ -90,6 +100,7 @@
                 </div>
             </div>
         </div>
+        <!-- /getInTouch form start -->
     </section>
 </template>
 
@@ -186,11 +197,11 @@ export default {
         top: 50%;
         right: 0;
         cursor: pointer;
-        transition: all 1s;
 
         div {
             width: 50px;
             height: 50px;
+            transition: all 1s;
 
             img {
                 width: 100%;

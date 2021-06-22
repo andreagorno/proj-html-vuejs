@@ -2,7 +2,8 @@
 
     <div class="main">
         <div class="container">
-
+            
+            <!-- company-info start -->
             <div class="company-info">
                 <div>
                     <h2>We are Bryson, New York-based art & design studio</h2>
@@ -13,73 +14,40 @@
                     </p>
                 </div>
             </div>
-        </div>
+            <!-- /company-info start -->
 
+        </div>
+            <!-- jumbotron and labels start -->
             <div class="jumbotron container-70">
-               <div class="cube">
-                    <img src="../assets/img/port-img-07.jpg" alt="">
+               <div 
+               v-for="(item, index) in items"
+               :key="index"
+               class="cube">
+                    <img 
+                    :src="require(`@/assets/img/${item.poster}`)" 
+                    :alt="item.h4">
                     <div class="label">
                         <div>
-                            <h4>Free design</h4>
-                            <h5>Book illustrations</h5>
+                            <h4> {{ item.h4 }} </h4>
+                            <h5> {{ item.h5 }} </h5>
                        </div>
                     </div>
-                </div> 
-               <div class="cube">
-                   <img src="../assets/img/port-img-08.jpg" alt="">
-                   <div class="label">
-                       <div>
-                            <h4>Free design</h4>
-                            <h5>Book illustrations</h5>
-                       </div>
-                    </div>
-                </div> 
-               <div class="cube">
-                    <img src="../assets/img/port-img-09.jpg" alt="">
-                    <div class="label">
-                        <div>
-                            <h4>Free design</h4>
-                            <h5>Book illustrations</h5>
-                       </div>
-                    </div>   
-                </div> 
-                <div class="cube">
-                    <img src="../assets/img/port-img-10.jpg" alt="">
-                    <div class="label">
-                        <div>
-                            <h4>Free design</h4>
-                            <h5>Book illustrations</h5>
-                       </div>
-                    </div>
-                </div> 
-               <div class="cube">
-                    <img src="../assets/img/port-img-11.jpg" alt="">
-                    <div class="label">
-                        <div>
-                            <h4>Free design</h4>
-                            <h5>Book illustrations</h5>
-                       </div>
-                    </div>   
-                </div> 
-               <div class="cube">
-                    <img src="../assets/img/port-img-12.jpg" alt="">
-                    <div class="label">
-                        <div>
-                            <h4>Free design</h4>
-                            <h5>Book illustrations</h5>
-                       </div>
-                    </div>   
-                </div> 
+                </div>  
             </div>
-            
-        <!-- </div> -->
+            <!-- jumbotron and labels start -->
+    
     </div>
     
 </template>
 
 <script>
 export default {
-    name: "PageIntro"
+    name: "PageIntro",
+
+    props: {
+        items: [ Array ]
+    },
+    
 }
 </script>
 
@@ -110,6 +78,7 @@ export default {
         h2 {
             font-size: 40px;
             margin: 40px 40px 40px 20px;
+            padding-right: 50px;
             color: $mainTextColor3;
         }
 
@@ -153,6 +122,7 @@ export default {
                     margin-left: 30px;
                     text-align: center;
                     transform: rotate(-45deg);
+                    
                     h4 {
                         font-size: 14px;
                         color: $mainTextColor4;

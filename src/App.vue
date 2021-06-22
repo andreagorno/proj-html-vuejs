@@ -30,27 +30,33 @@ export default {
       options: [
         {
           title: "Home",
-          id: 1 
+          id: 1,
+          color: "blue" 
         },
         {
           title: "Pages",
-          id: 2
+          id: 2,
+          color: "lightgreen"
         },
         {
           title: "Portfolio",
-          id: 3
+          id: 3,
+          color: "orange"
         },
         {
           title: "Blog",
-          id: 4 
+          id: 4,
+          color: "pink" 
         },
         {
           title: "Shop",
-          id: 5 
+          id: 5,
+          color: "yellow" 
         },
         {
           title: "Elements",
-          id: 6 
+          id: 6,
+          color: "green" 
         }
       ],
       medias: [
@@ -72,7 +78,7 @@ export default {
         {
           url: "https://www.pinterest.it/qodeinteractive/_created/",
           code: "fa-pinterest-p",
-          bgcolor: "green"
+          bgcolor: "lightgreen"
         },
       ]
     }

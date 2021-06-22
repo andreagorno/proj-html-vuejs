@@ -1,7 +1,9 @@
 <template>
     <section>
-        <!-- <div class=""> -->
+
             <div class="container-70">
+
+                <!-- WhatWeDo start -->
                 <div class="container-40">
                     <h3>
                         What we do?
@@ -14,7 +16,9 @@
                         <i class="fas fa-caret-right"></i>
                     </button>
                 </div>
+                <!-- /WhatWeDo start -->
 
+                <!-- 4 labels start -->
                 <div class="container-60 ">
                     <div>
                         <img src="../assets/img/h2-icon-01.png" alt="tree">
@@ -41,21 +45,24 @@
                         </div>
                     </div>
                 </div>
-                
+                <!-- /4 labels start -->
             </div>
+                
+            <!-- social media aside start -->
             <div class="social-media">
-
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                
             </div>
-        <!-- </div> -->
+            <!-- /social media aside start --> 
+            
+        <!-- video player start -->
         <div class="video-player">
             <img src="../assets/img/main-home-video-button-img-01.png" alt="green-player" class="green-player">
             <img src="../assets/img/main-home-video-button-img-02.png" alt="red-player" class="red-player">
         </div>
+        <!-- video player start -->
     </section>
 </template>
             

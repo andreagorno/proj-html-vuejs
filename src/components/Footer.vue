@@ -77,7 +77,7 @@ export default {
         .pink {
             background-color: #F7BCA8;
         }
-        .green {
+        .lightgreen {
             background-color: #C2BF7D;
         }
 
