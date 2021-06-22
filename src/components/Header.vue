@@ -5,12 +5,13 @@
         </div>
         <div class="nav">
             <div 
-            v-for="(option) in options"
-            :key="option.id"
+            v-for="element in elements"
+            :key="element.id"
+            class="items"
+            :class="{'active' : element.id == activeItem}"
+            @click="setActive(element.id)"
             >
-                <HeaderMenu 
-                    :item="option"
-                />  
+            {{ element.title }}     
             </div>
             <div>
                 <img src="../assets/svg/svg-1.svg">
@@ -22,49 +23,33 @@
 </template>
 
 <script>
-import HeaderMenu from "./HeaderMenu.vue"
+
 
 export default {
     name: "Header",
 
-    components: {
-        HeaderMenu
+    props: {
+      elements: [ Array ],
     },
 
     data: function () {
-    return {
-      options: [
-        {
-          title: "Home",
-          id: 1 
-        },
-        {
-          title: "Pages",
-          id: 2
-        },
-        {
-          title: "Portfolio",
-          id: 3
-        },
-        {
-          title: "Blog",
-          id: 4 
-        },
-        {
-          title: "Shop",
-          id: 5 
-        },
-        {
-          title: "Elements",
-          id: 6 
-        }
-      ],
+      return {
+        activeItem: 1,
+      }
+    },
+
+    methods: {
+      setActive: function (newActive) {
+        console.log(newActive);
+        this.activeItem = newActive;
+      }
     }
-  }
 }
+  
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
     header {
         display: flex;
         align-items: center;
@@ -81,7 +66,17 @@ export default {
         }
 
         .nav {
-            display: flex;
+          display: flex;
+
+          .items {
+            margin-right: 30px;
+            font-weight: bold;
+            color: $mainTextColor1;
+            cursor: pointer;
+          }
         }
+        .active {
+        border-bottom: 2px solid #EFCA9E;
+    }
     }
 </style>

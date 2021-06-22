@@ -235,7 +235,7 @@ export default {
             p {
                 margin: 10px 0;
                 font-size: 12px;
-                color: $mainTextColor1;
+                color: $mainTextColor2;
             }
         }
 
@@ -244,7 +244,7 @@ export default {
             input {
                 border: none;
                 border-bottom: 1px solid $mainTextColor4;
-                color: $mainTextColor1 ;
+                color: $mainTextColor2 ;
                 padding: 5px 0;
             }
 
