@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+@import "./variables.scss";
 
 
 * {
@@ -8,7 +11,30 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: $bgMainColor1;
+}
+
 .container {
     width: 80%;
+    max-width: 1235px;
     margin: auto;
+}
+
+.container-70 {
+    width: 70%;
+    margin: auto;
+}
+
+.container-60 {
+    width: 60%;
+    margin: auto;
+}
+
+.container-50 {
+    width: 50%;
+}
+
+.container-40 {
+    width: 40%;
 }

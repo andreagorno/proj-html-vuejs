@@ -17,21 +17,57 @@
             <div class="jumbotron">
                <div class="cube">
                     <img src="../assets/img/port-img-07.jpg" alt="">
+                    <div class="label">
+                        <div>
+                            <h4>Free design</h4>
+                            <h5>Book illustrations</h5>
+                       </div>
+                    </div>
                 </div> 
                <div class="cube">
                    <img src="../assets/img/port-img-08.jpg" alt="">
+                   <div class="label">
+                       <div>
+                            <h4>Free design</h4>
+                            <h5>Book illustrations</h5>
+                       </div>
+                    </div>
                 </div> 
                <div class="cube">
-                    <img src="../assets/img/port-img-09.jpg" alt="">   
+                    <img src="../assets/img/port-img-09.jpg" alt="">
+                    <div class="label">
+                        <div>
+                            <h4>Free design</h4>
+                            <h5>Book illustrations</h5>
+                       </div>
+                    </div>   
                 </div> 
                 <div class="cube">
                     <img src="../assets/img/port-img-10.jpg" alt="">
+                    <div class="label">
+                        <div>
+                            <h4>Free design</h4>
+                            <h5>Book illustrations</h5>
+                       </div>
+                    </div>
                 </div> 
                <div class="cube">
-                    <img src="../assets/img/port-img-11.jpg" alt="">   
+                    <img src="../assets/img/port-img-11.jpg" alt="">
+                    <div class="label">
+                        <div>
+                            <h4>Free design</h4>
+                            <h5>Book illustrations</h5>
+                       </div>
+                    </div>   
                 </div> 
                <div class="cube">
-                    <img src="../assets/img/port-img-12.jpg" alt="">   
+                    <img src="../assets/img/port-img-12.jpg" alt="">
+                    <div class="label">
+                        <div>
+                            <h4>Free design</h4>
+                            <h5>Book illustrations</h5>
+                       </div>
+                    </div>   
                 </div> 
             </div>
             
@@ -69,14 +105,14 @@ export default {
         }
 
         h2 {
-            font-size: 42px;
+            font-size: 40px;
             margin: 40px 40px 40px 20px;
             color: $mainTextColor3;
         }
 
         p {
             font-size: 14px;
-            margin-left: 50px;
+            margin-left: 30px;
             color: $mainTextColor2;
         }
     }
@@ -89,12 +125,49 @@ export default {
         margin-top: 50px;
 
         .cube {
+            position: relative;
             width: 50%;
 
             img {
                 width: 100%;
                 height: 100%;
             }
+
+
+            .label {
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 130px;
+                height: 130px;
+                background: linear-gradient(135deg, $bgMainColor1 50%, #F7BCA8 50%);
+
+                div {
+                    margin-top: 40px;
+                    margin-left: 30px;
+                    text-align: center;
+                    transform: rotate(-45deg);
+                    h4 {
+                        font-size: 14px;
+                        color: $mainTextColor4;
+                    }
+                    h5 {
+                        font-size: 12px;
+                        color: $mainTextColor1;
+                        font-weight: 400;
+                    }
+                    
+                    
+                }
+            }
+        }
+
+        .cube:hover .label {
+            display: flex;
         }
     }
 </style>
