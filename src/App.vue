@@ -1,14 +1,20 @@
 <template>
   <div id="app">
-    <Header 
+    <div v-if="!loader">
+      <Header 
       :elements="options"
-    /> 
+      /> 
 
-    <Main />
+      <Main />
 
-    <Footer
-      :items="medias"
-    />
+      <Footer
+        :items="medias"
+      />
+    </div>
+    
+    
+    <Loader v-else />
+    
   </div>
 </template>
 
@@ -16,6 +22,7 @@
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
+import Loader from "./components/Loader.vue";
 
 export default {
   name: 'App',
@@ -23,6 +30,7 @@ export default {
     Header,
     Main,
     Footer,
+    Loader
   },
 
   data: function () {
@@ -80,8 +88,15 @@ export default {
           code: "fa-pinterest-p",
           bgcolor: "lightgreen"
         },
-      ]
+      ],
+      loader: true
     }
+  },
+
+  created: function () {
+    setTimeout( () => {
+      this.loader = false;
+    },1500)
   }
 
   

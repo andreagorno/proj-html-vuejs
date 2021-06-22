@@ -147,8 +147,12 @@ export default {
 
         i {
             margin: 10px 0;
-            font-size: 12px;
+            font-size: 14px;
             color: black;
+        }
+
+        i:hover {
+            color: #69A9AA;
         }
     }
 
