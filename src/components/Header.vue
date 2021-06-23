@@ -6,7 +6,7 @@
     </div>
     <!-- /logo start -->
 
-    <!-- nav-bar start -->
+    <!-- nav-bar scrolldown start -->
     <div class="nav">
       <div 
         v-for="element in elements"
@@ -112,7 +112,7 @@ export default {
         display: flex;
         align-items: center;
         padding: 30px;
-        max-width: 1600px;
+        max-width: 1700px;
         margin: auto;
 
         .logo {

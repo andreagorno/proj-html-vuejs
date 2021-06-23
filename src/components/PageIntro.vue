@@ -60,7 +60,7 @@ export default {
         background-repeat: repeat-x;
         background-position-y: 0%, 90%;
         background-position-x: 0px, -65px;
-        max-width: 1600px;
+        max-width: 1700px;
         margin: auto;
     }
 
