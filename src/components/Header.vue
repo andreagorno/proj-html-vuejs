@@ -14,9 +14,19 @@
         class="items"
         :class="{'active' : element.id == activeItem}"
         @click="setActive(element.id)"
+        @mouseover="element.listOne = true"
+        @mouseleave="element.listOne = false"
       >
-      {{ element.title }}     
+      {{ element.title }}  
+      <ul v-if="element.listOne" @click="element.listOne = false">
+        <li>{{ element.subMenu1 }}</li>
+        <li>{{ element.subMenu2 }}</li>
+        <li>{{ element.subMenu3 }}</li>
+        <li>{{ element.subMenu4 }}</li>
+        <li>{{ element.subMenu5 }}</li>
+      </ul>   
       </div>
+      
       <div class="dotmenu">
         <i 
         :class="`fas fa-circle ${element.color}`"
@@ -51,8 +61,15 @@ export default {
     data: function () {
       return {
         activeItem: 1,
+        
+        
+        
+        
+        
+        
       }
     },
+
 
     methods: {
       setActive: function (newActive) {
@@ -111,19 +128,41 @@ export default {
           align-items: center;
 
           .items {
+            position: relative;
+            width: 120px;
+            text-align: center;
             margin-right: 30px;
             font-weight: bold;
             color: $mainTextColor1;
             cursor: pointer;
-            transition: all 0.5s;
-          }
-          .items:hover {
-            transform: scale(1.2);
+
+            ul {
+              position: absolute;
+              top: 105%;
+              left: 50%;
+              width: 150%;
+              transform: translateX(-50%);
+              list-style: none;
+              background-color: #FAF9F9;
+              // transition: all 0.5s;
+
+              li {
+                padding: 15px 5px;
+                color: $mainTextColor2;
+                font-weight: 400;
+
+                &:hover {
+                  border-bottom: 2px solid #EFCA9E;
+                  background-color: #E5A85A;
+                  color: white;
+                }
+              }
+            }
           }
         }
         .active {
         border-bottom: 2px solid #EFCA9E;
-        transform: scale(1.2);
+        // transform: scale(1.2);
         }
 
         .dotmenu {
